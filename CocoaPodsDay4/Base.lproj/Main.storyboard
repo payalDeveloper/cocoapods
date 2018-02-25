@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rem-DE-Wfu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--cocoapods-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CocoaPodsDay4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocoapods" translatesAutoresizingMaskIntoConstraints="NO" id="znK-NB-EHn">
+                                <rect key="frame" x="16" y="97" width="343" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="OEM-Gn-CGk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-Wb-1Ja">
+                                <rect key="frame" x="0.0" y="64" width="375" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="iSC-15-fFZ"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="3ZB-DY-4xn" kind="presentation" identifier="" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="dUX-Na-qmj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="znK-NB-EHn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="0eE-v2-1nr"/>
+                            <constraint firstItem="FVi-Wb-1Ja" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MjB-Aj-3wf"/>
+                            <constraint firstItem="FVi-Wb-1Ja" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QD5-HV-IyZ"/>
+                            <constraint firstItem="znK-NB-EHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UTh-mx-m3q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="znK-NB-EHn" secondAttribute="trailing" constant="16" id="hhT-b1-V3d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FVi-Wb-1Ja" secondAttribute="trailing" id="xHu-vd-WrB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="cocoapods" largeTitleDisplayMode="never" id="ktB-RN-Fjv">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="7dA-dx-gQz">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565.60000000000002" y="129.98500749625188"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="CJZ-gG-qFo">
+            <objects>
+                <viewController storyboardIdentifier="secondVC" id="3ZB-DY-4xn" customClass="SecondViewController" customModule="CocoaPodsDay4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="bYp-fq-8aA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rg2-AF-YCH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocoapods" translatesAutoresizingMaskIntoConstraints="NO" id="3vF-Dl-AIF">
+                                        <rect key="frame" x="0.0" y="207" width="375" height="189"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3vF-Dl-AIF" firstAttribute="width" secondItem="Rg2-AF-YCH" secondAttribute="width" id="G8H-sA-8fr"/>
+                                    <constraint firstAttribute="bottom" secondItem="3vF-Dl-AIF" secondAttribute="bottom" constant="207" id="QZa-fn-BXe"/>
+                                    <constraint firstItem="3vF-Dl-AIF" firstAttribute="centerX" secondItem="Rg2-AF-YCH" secondAttribute="centerX" id="VcA-0m-cq4"/>
+                                    <constraint firstAttribute="trailing" secondItem="3vF-Dl-AIF" secondAttribute="trailing" constant="16" id="VqS-Hg-stc"/>
+                                    <constraint firstItem="3vF-Dl-AIF" firstAttribute="centerY" secondItem="Rg2-AF-YCH" secondAttribute="centerY" id="c08-eV-kJ0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rg2-AF-YCH" firstAttribute="leading" secondItem="eHg-I9-cBU" secondAttribute="leading" id="0it-vc-Cuz"/>
+                            <constraint firstItem="Rg2-AF-YCH" firstAttribute="top" secondItem="eHg-I9-cBU" secondAttribute="top" constant="44" id="0pe-Oq-bzC"/>
+                            <constraint firstItem="eHg-I9-cBU" firstAttribute="bottom" secondItem="Rg2-AF-YCH" secondAttribute="bottom" id="Eif-9G-xHk"/>
+                            <constraint firstItem="eHg-I9-cBU" firstAttribute="trailing" secondItem="Rg2-AF-YCH" secondAttribute="trailing" id="tRe-GO-LEJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eHg-I9-cBU"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="3vF-Dl-AIF" id="YSh-sa-rwG"/>
+                        <outlet property="scrollView" destination="Rg2-AF-YCH" id="vgz-9f-pDt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDC-X8-KGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325.5999999999999" y="129.98500749625188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1hT-hg-V88">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rem-DE-Wfu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P7J-cy-4Ts">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0aD-2a-Liv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6db-ag-H6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cocoapods" width="266" height="189"/>
+    </resources>
+</document>
